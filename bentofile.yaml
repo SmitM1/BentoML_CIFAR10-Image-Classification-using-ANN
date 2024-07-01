@@ -1,0 +1,11 @@
+service: "service.py:svc"
+labels:
+  owner: Smit
+  project: ann_img_classifier
+include:
+- "*.py"
+python:
+  packages:
+    - tensorflow
+    - numpy
+    - bentoml
